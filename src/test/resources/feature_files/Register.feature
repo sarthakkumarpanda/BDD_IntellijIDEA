@@ -46,7 +46,6 @@ Feature: Register Functionality of TutorialsNinja
   @NoFields
   Scenario: Register With No Fields
     Given User navigates to Register page
-    And User selects Privacy Policy checkbox
     And User clicks on Continue button
     Then User gets warning message for every mandatory field
 
