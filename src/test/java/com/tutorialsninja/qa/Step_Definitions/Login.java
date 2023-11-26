@@ -26,14 +26,14 @@ public class Login {
         //driver.findElement(By.linkText("Login")).click();
     }
 
-    @When("User enters valid email {string}")
+    @When("^User enters valid email (.+)$")
     public void user_enters_valid_email(String emailText) {
     	LoginPage loginpage = new LoginPage(driver);
     	loginpage.enterEmail(emailText);
         //driver.findElement(By.id("input-email")).sendKeys(emailText);
     }
 
-    @And("User enters valid password {string}")
+    @And("^User enters valid password (.+)$")
     public void user_enters_valid_password(String passwordText) {
     	LoginPage loginpage = new LoginPage(driver);
     	loginpage.enterPassword(passwordText);
