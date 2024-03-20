@@ -27,8 +27,7 @@ public class DriverFactory_Code {
     }
 
     public static WebDriver getDriver(){
-
-        return driver;
+      return driver;
     }
 
 

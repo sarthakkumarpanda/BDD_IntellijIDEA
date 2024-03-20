@@ -30,7 +30,6 @@ public class MyHooks {
 
     @After
     public void tearDown(){
-
         driver.quit();
     }
 

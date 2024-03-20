@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true,
         features = {"src/test/resources/feature_files" },
         glue     = {"com.tutorialsninja.qa.Step_Definitions", "com.tutorialsninja.qa.Hooks"},
-        tags = "@TutorialsNinjaLogin or @@TutorialsNinjaRegistration or @TutorialsNinjaSearchProduct",
+        tags = "@TutorialsNinjaLogin or @TutorialsNinjaRegistration or @TutorialsNinjaSearchProduct",
         plugin = {"pretty", "html:target/site/cucumber-html", "json:target/cucumber1.json"}
 
    )
